@@ -1,46 +1,8 @@
-
-# coding: utf-8
-
-# In[7]:
-
-from IPython.core.interactiveshell import InteractiveShell
-InteractiveShell.ast_node_interactivity = "all" # 打印所有的变量
-
-
-# In[1]:
-
-import os
-import zipfile
-from azureml import Workspace
-ws = Workspace()
-name = 'sentiment.zip'
-with open(name, 'wb') as zipFile:
-    out = zipFile.write(ws.datasets[name].open().read()) # 将读到的信息（byte格式）写入zip格式
-if not(os.path.exists('sentiment')):
-    zipfile.ZipFile(name,'r').extractall()
-get_ipython().system('ls')
-
-
-# In[2]:
-
-get_ipython().system('pip install -q keras==2.0.6')
-#!pip install -q tensorflow==0.12.1
-get_ipython().system('pip install -q snownlp')
-get_ipython().system('pip install -q jieba')
-
-
-# In[3]:
-
-get_ipython().system('pip install tensorflow==1.0')
-
-
-# In[5]:
-
 # https://github.com/EliasCai/sentiment 代码持续更新，欢迎大家关注，希望有所帮助，共同提升 
 # 个人介绍：工作从事大数据开发，熟悉机器学习和深度学习的使用
 # 比赛经验：曾参加场景分类（AiChallenger）、口碑商家客流量预测（天池）、用户贷款风险预测（DataCastle）、
 #           摩拜算法天战赛（biendata）等，寻找队友冲击前排，希望不吝收留！
-# 版本：v1.0
+# 版本：v1.1
 # 环境：python3; tensorflow-1.0.0; keras-2.0.6
 # 邮箱：elias8888#qq.com
 # 使用：将data文件夹中的三个csv文件放到py文件同个文件夹下面即可运行
