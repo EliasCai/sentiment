@@ -1,9 +1,5 @@
 # sentiment
-### 关于个人
-1. https://github.com/EliasCai/sentiment 代码持续更新，欢迎大家关注，希望有所帮助，共同提升
-1. 个人介绍：工作从事大数据开发，熟悉机器学习和深度学习的使用
-1. 比赛经验：曾参加场景分类（AiChallenger）、口碑商家客流量预测（天池）、用户贷款风险预测（DataCastle）、摩拜算法天战赛（biendata）等，
-2. **寻找队友冲击前排，希望不吝收留**
+
 ### 关于代码
 1. 版本：v1.1
 1. 环境：python3; tensorflow-1.0.0; keras-2.0.6
