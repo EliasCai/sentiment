@@ -3,7 +3,6 @@
 ### 关于代码
 1. 版本：v1.1
 1. 环境：python3; tensorflow-1.0.0; keras-2.0.6
-1. 邮箱：elias8888#qq.com
 1. 使用：将data文件夹中的三个csv文件放到py文件同个文件夹下面即可运行
 1. Finish：
     -  使用jieba进行分词，并用LSTM对第一个情感关键词进行预测，10轮epochs后验证样本的准确率为0.70
